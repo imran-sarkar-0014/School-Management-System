@@ -1,0 +1,82 @@
+###
+get http://localhost:5000/attendance/Class_10?limit=30
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+
+
+###
+get http://localhost:5000/attendance/Class_9?limit=30
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZDU5OTJlOGRlNmFkZjcxOThiZWU4ZiIsImVtYWlsIjoiaW1yYW5AeWFob28uY29tIiwidHlwZSI6IlN0dWRlbnQiLCJpYXQiOjE2NDEzODgzNjJ9._H8PYY_12kr8GMKo7oA_QBYKu-UTysSuhh_bxuLcMM0
+
+
+
+
+###
+
+post http://localhost:5000/attendance
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+Content-Type: application/json
+
+{
+    "className" : "Class 9",
+    "date" : "04/01/2022",
+    "attendances" : [
+        {
+            "name" : "hiron",
+            "id": "903445935093",
+            "present" : true
+        },
+        {
+            "name" : "imran",
+            "id": "61d5992e8de6adf7198bee8f",
+            "present" : true
+        },
+
+        {
+            "name" : "shipok",
+            "id": "9034595435093",
+            "present" : false
+        },
+
+        {
+            "name" : "nazmul",
+            "id": "45490345935093",
+            "present" : true
+        }
+    ]
+}
+
+
+###
+put http://localhost:5000/attendance/61d5952ea6b663fca463b98f
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+Content-Type: application/json
+
+{
+    "className" : "Class 10",
+    "date" : "04/01/2022",
+    "attendances" : [
+        {
+            "name" : "hiron",
+            "id": "903445935093",
+            "present" : true
+        },
+
+        {
+            "name" : "shipok",
+            "id": "9034595435093",
+            "present" : true
+        },
+
+        {
+            "name" : "nazmul",
+            "id": "45490345935093",
+            "present" : true
+        }
+    ]
+}
+
+
+###
+delete http://localhost:5000/attendance/61d593b4ff8a1ba8ce17d249
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+

@@ -1,0 +1,49 @@
+
+### update month
+
+post http://localhost:5000/transitions/create-fund
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+Content-Type: application/json
+
+{
+    "total": 0,
+    "totalPendingFees": 0,
+    "totalPendingSalaries":0
+
+}
+
+
+### update month
+
+put http://localhost:5000/transitions/update-month
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+
+###### sum of total collection
+# db.students.aggregate({
+#     $group: {
+#         _id: '',
+#         fees: { $sum: '$fees' }
+#     }
+#  }, {
+#     $project: {
+#         _id: 0,
+#         fees: '$fees'
+#     }
+# })
+
+###
+post http://localhost:5000/transitions/pay-teacher-salary/61cb9be5b106700996d24929
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+Content-Type: application/json
+
+{
+    "amount" : 30000
+}
+###
+post http://localhost:5000/transitions/pay-admin-salary/61bc4c2139794488ad4c1272
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+Content-Type: application/json
+
+{
+    "amount" : 30000
+}

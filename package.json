@@ -1,0 +1,36 @@
+{
+  "name": "school-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.3.0"
+  },
+  "scripts": {
+    "build": "cd frontEnd && npm run build",
+    "install-client": "cd frontEnd && npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build",
+    "start": "node index.js",
+    "frontEnd": "cd frontEnd && npm start",
+    "both": "concurrently \"npm:frontEnd\" \"npm:dev\" ",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Imran Sarkar Sabbir",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,31 @@
+### get student user information
+get http://localhost:5000/user/st-user
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZDZlMzJhMGIxMjljNzQ1MDgyMiIsImVtYWlsIjoic2FiYmlyc2Fya2FyQGdtYWlsLmNvbSIsInR5cGUiOiJTdHVkZW50IiwiaWF0IjoxNjM5NzM3NjczfQ.hwm1RFnT4XeoGUJv3JlTyPyb-tN4pwqT93mDhwdXAbE
+
+### get teacher user information
+get http://localhost:5000/user/tech-user
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZGMzMzJhMGIxMjljNzQ1MDgyYiIsImVtYWlsIjoiamFtYWx1ZGRpbkBnbWFpbC5jb20iLCJ0eXBlIjoiVGVhY2hlciIsImlhdCI6MTYzOTczNzcyNX0.Je6_OQpNVfvGfTUKrySIyqBC3zhf5_MW4gt-Gd2TDBI
+
+### get admin user information
+get http://localhost:5000/user/admin-user
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+
+### get total teachers
+
+get http://localhost:5000/user/admins
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+
+
+
+###/// get all student of a class
+post http://localhost:5000/user/class-students
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+Content-Type: application/json
+
+{
+    "className" : "Class 10"
+}
+
+
+###/// get all student of a class
+get http://localhost:5000/user/transition/61d3d547b6e80bb159c54101

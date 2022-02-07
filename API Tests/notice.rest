@@ -1,0 +1,35 @@
+get http://localhost:5000/notice/
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+
+
+### post a notice
+post http://localhost:5000/notice/
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+Content-Type: application/json
+
+{
+    "header" : "Our school will be closed.",
+    "body" : "opifsdoj sdf sdoif osdf dsf j"
+}
+
+
+### post a notice
+put http://localhost:5000/notice/61d43f86d0afb436a37c55d2
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+Content-Type: application/json
+
+{
+    "header" : "Our school will be closed.",
+    "body" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+}
+
+
+
+### post a notice
+delete http://localhost:5000/notice/61d430fcddb0cfde81701063
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTY0MTI5NjAzNX0.pzMcG0EbxVHTdimd91h91zFPn2jnFeaN-8KtR9tgmzM
+
+
+### jamal uddin
+delete http://localhost:5000/notice/61d455910d43f775386cda54
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxY2I5YmU1YjEwNjcwMDk5NmQyNDkyOSIsImVtYWlsIjoiamFtYWx1ZGRpbkBnbWFpbC5jb20iLCJ0eXBlIjoiVGVhY2hlciIsImlhdCI6MTY0MTMxMjExNH0.5cXwsV1TUfHq83IXhfHlgOdFaMngUXrQvuuIkb2K9Dk

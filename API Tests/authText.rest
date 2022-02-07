@@ -1,0 +1,101 @@
+# login
+post http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "tanvirraihan@gmail.com",
+    "password": "password",
+    "type": "Admin"
+}
+
+
+
+### login
+post http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "jamaluddin@gmail.com",
+    "password": "jamaluddin",
+    "type": "Teacher"
+}
+### login
+post http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "imran@yahoo.com",
+    "password": "imran",
+    "type": "Student"
+}
+
+
+
+
+
+
+
+
+
+
+### registration a user
+post http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "name":"Shohidullah",
+    "dateOfBirth": "",
+    "email": "shohidullah@gmail.com",
+    "password": "password",
+    "classLevel": "principal",
+    "type": "Admin"
+}
+
+
+
+
+
+
+
+
+
+### get all pending requests for students
+get http://localhost:5000/auth/registrations/students
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM0YzIxMzk3OTQ0ODhhZDRjMTI3MiIsImVtYWlsIjoiaW1yYW5zYXJrYXJAZ21haWwuY29tIiwidHlwZSI6IkFkbWluIiwiaWF0IjoxNjM5NzMxNTQ5fQ.opbgi0fOono_uImx_kgJ9XoM7A9anlMJJ-wc5UR_Wm4
+
+### get all pending requests for teacher
+get http://localhost:5000/auth/registrations/teachers
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM0YzIxMzk3OTQ0ODhhZDRjMTI3MiIsImVtYWlsIjoiaW1yYW5zYXJrYXJAZ21haWwuY29tIiwidHlwZSI6IkFkbWluIiwiaWF0IjoxNjM5NzMxNTQ5fQ.opbgi0fOono_uImx_kgJ9XoM7A9anlMJJ-wc5UR_Wm4
+
+
+### get all pending requests for admin 
+get http://localhost:5000/auth/registrations/admins
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM0YzIxMzk3OTQ0ODhhZDRjMTI3MiIsImVtYWlsIjoiaW1yYW5zYXJrYXJAZ21haWwuY29tIiwidHlwZSI6IkFkbWluIiwiaWF0IjoxNjM5NzMxNTQ5fQ.opbgi0fOono_uImx_kgJ9XoM7A9anlMJJ-wc5UR_Wm4
+
+
+
+
+
+
+
+### delete pending requests for given id
+delete http://localhost:5000/auth/admission/61c08cd3b7324457e723e658
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM0YzIxMzk3OTQ0ODhhZDRjMTI3MiIsImVtYWlsIjoiaW1yYW5zYXJrYXJAZ21haWwuY29tIiwidHlwZSI6IkFkbWluIiwiaWF0IjoxNjM5NzMxNTQ5fQ.opbgi0fOono_uImx_kgJ9XoM7A9anlMJJ-wc5UR_Wm4
+
+
+
+
+
+
+
+### accept registration for givin id 
+put http://localhost:5000/auth/accept
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM0YzIxMzk3OTQ0ODhhZDRjMTI3MiIsImVtYWlsIjoiaW1yYW5zYXJrYXJAZ21haWwuY29tIiwidHlwZSI6IkFkbWluIiwiaWF0IjoxNjM5NzMxNTQ5fQ.opbgi0fOono_uImx_kgJ9XoM7A9anlMJJ-wc5UR_Wm4
+ 
+{
+    "id" : "61c45428108c7df47afbf995",
+    "value": "70000"
+}
+

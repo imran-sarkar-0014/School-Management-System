@@ -1,0 +1,13 @@
+get http://localhost:5000/transitions/fund
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+
+//////////////
+
+get http://localhost:5000/transitions/fund
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxYmM1ZTI3MzJhMGIxMjljNzQ1MDgzNiIsImVtYWlsIjoidGFudmlycmFpaGFuQGdtYWlsLmNvbSIsInR5cGUiOiJBZG1pbiIsImlhdCI6MTYzOTczNzc4OH0.OcGFH-ZOcEXTm5v0rzrAPe5NIm5EK7dDtWiL2CcbnrY
+
+
+
+
+
+
